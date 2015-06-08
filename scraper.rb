@@ -39,7 +39,7 @@ page.xpath('//table[.//tr[contains(.,"Membres")]]//tr').drop(1).each do |party|
     data = { 
       name: mp.text.gsub(/^\d+\.\s*/,'').upcase,
       party: party_name,
-      party_name: party_url.split('/').last[/^(\d+)/, 1], 
+      party_id: party_url.split('/').last[/^(\d+)/, 1], 
       gender: 'male',
       term: '7.1',
       source: party_url,
