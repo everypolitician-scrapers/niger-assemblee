@@ -13,5 +13,6 @@ gem "colorize"
 gem "nokogiri"
 gem "open-uri-cached"
 gem "fuzzy_match"
+gem 'rubocop'
 gem 'scraperwiki', github: 'openaustralia/scraperwiki-ruby', branch: 'morph_defaults'
 gem 'wikidata-client', '~> 0.0.7', require: 'wikidata'
