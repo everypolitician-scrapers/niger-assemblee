@@ -10,8 +10,9 @@ require 'date'
 require 'colorize'
 require 'pry'
 require 'csv'
-require 'open-uri/cached'
-OpenURI::Cache.cache_path = '.cache'
+# require 'open-uri/cached'
+# OpenURI::Cache.cache_path = '.cache'
+require 'scraped_page_archive/open-uri'
 
 def noko(url)
   Nokogiri::HTML(open(url).read) 
