@@ -1,0 +1,51 @@
+---
+request:
+  method: get
+  uri: http://www.assemblee.ne/index.php/organes/les-deputes
+  body:
+    encoding: US-ASCII
+    string: ''
+  headers:
+    Accept-Encoding:
+    - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+    Accept:
+    - '*/*'
+    User-Agent:
+    - Ruby
+response:
+  status:
+    code: 200
+    message: OK
+  headers:
+    Date:
+    - Tue, 15 Nov 2016 16:59:12 GMT
+    Server:
+    - Apache/2.2.15 (Red Hat)
+    X-Powered-By:
+    - PHP/5.3.15
+    Set-Cookie:
+    - 875cd6c0712c35a45cc241432a28ebb2=gugso28ctgin4s13getnaiu1c2; path=/
+    - gk_finance_business_tpl=gk_finance_business; expires=Sun, 05-Nov-2017 16:59:12
+      GMT; path=/
+    P3p:
+    - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+    Vary:
+    - User-Agent
+    Expires:
+    - Mon, 1 Jan 2001 00:00:00 GMT
+    Last-Modified:
+    - Tue, 15 Nov 2016 16:59:12 GMT
+    Cache-Control:
+    - post-check=0, pre-check=0
+    Pragma:
+    - no-cache
+    Connection:
+    - close
+    Transfer-Encoding:
+    - chunked
+    Content-Type:
+    - text/html; charset=utf-8
+  body:
+    encoding: ASCII-8BIT
+  http_version: 
+recorded_at: Tue, 15 Nov 2016 16:54:55 GMT
