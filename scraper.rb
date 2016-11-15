@@ -1,6 +1,5 @@
 #!/bin/env ruby
 # encoding: utf-8
-
 require 'scraperwiki'
 require 'nokogiri'
 require 'date'
@@ -15,7 +14,7 @@ require 'csv'
 require 'scraped_page_archive/open-uri'
 
 def noko(url)
-  Nokogiri::HTML(open(url).read) 
+  Nokogiri::HTML(open(url).read)
 end
 
 def scrape_page(url)
@@ -36,7 +35,7 @@ def scrape_party(party_url, party_name, member_count)
   mps = member_page.css('.article-content p') if mps.count.zero?
   warn "#{party_url} should have #{member_count} MPs; have #{mps.count}" unless mps.count == member_count
   mps.each do |mp|
-    data = { 
+    data = {
       name: mp.text.gsub(/^\d+\.\s*/,'').upcase,
       party: party_name,
       party_id: CGI.parse(URI.parse(party_url).query)['id'].first,
