@@ -12,7 +12,9 @@ gem "pry"
 gem "colorize"
 gem "nokogiri"
 gem "open-uri-cached"
+gem 'field_serializer', github: 'everypolitician/field_serializer'
 gem "fuzzy_match"
 gem 'rubocop'
+gem 'scraped_page', github: 'everypolitician/scraped_page'
 gem 'scraperwiki', github: 'openaustralia/scraperwiki-ruby', branch: 'morph_defaults'
 gem 'wikidata-client', '~> 0.0.7', require: 'wikidata'
