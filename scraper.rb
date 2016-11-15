@@ -49,4 +49,4 @@ def scrape_party(party_url, party_name, member_count)
   end
 end
 
-scrape_page 'http://www.assemblee.ne/index.php?option=com_content&view=article&id=165&Itemid=154'
+scrape_page 'http://www.assemblee.ne/index.php/organes/les-deputes'
